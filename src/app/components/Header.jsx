@@ -1,6 +1,6 @@
 import React from "react";
 import LinkedinIcon from "../svg/LinkedinIcon";
-import ElipseHeroIcon from "../svg/ElipseHEroIcon";
+import ElipseHeroIcon from "../svg/ElipseHeroIcon";
 
 function Header() {
   return (
