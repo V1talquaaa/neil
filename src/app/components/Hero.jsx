@@ -1,11 +1,28 @@
+'use client';
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import SkyIconHero from "../svg/SkyIconHero";
 import ArrowHeroIcon from "../svg/ArrowHeroIcon";
+import Modal from "../ui/Modal";
+import ElipseHeroIcon from "../svg/ElipseHeroIcon";
+import RightHeroIcon from "../svg/RightHeroIcon";
 
 function Hero() {
+
+  const [openModal, setOpenModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setOpenModal(true);
+  }
+
   return (
-    <section className="pt-[75px] pb-[134px] bg-mainBlue text-mainWhite relative">
+    <section className="pt-[51px] pb-[134px] bg-mainBlue text-mainWhite relative">
+      <div className="absolute -top-20">
+      <ElipseHeroIcon />
+      </div>
+      <div className="absolute right-0 -top-24">
+        <RightHeroIcon />
+      </div>
       <div className="container flex items-center">
         <div className="z-10 ">
           <h1 className="text-[56px] font-bold">
@@ -23,7 +40,7 @@ function Hero() {
             <span className="font-bold">thriving teams</span> in a virtual world
           </p>
           <div className="flex">
-            <button className="mt-[48px] mr-[68px] py-[12px] px-[24px] text-base font-bold border bg-mainWhite text-mainBlue rounded-[8px] hover:bg-mainBlue hover:text-mainWhite ease-in duration-200">
+            <button type="button" onClick={handleOpenModal} className="mt-[48px] mr-[68px] py-[12px] px-[24px] text-base font-bold border bg-mainWhite text-mainBlue rounded-[8px] hover:bg-mainBlue hover:text-mainWhite ease-in duration-200">
               Get in touch
             </button>
             <ArrowHeroIcon />
@@ -34,6 +51,7 @@ function Hero() {
       <div className="absolute bottom-0 z-0">
         <SkyIconHero />
       </div>
+      {openModal && <Modal setOpenModal={setOpenModal} />}
     </section>
   );
 }

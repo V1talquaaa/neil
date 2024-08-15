@@ -3,7 +3,7 @@ import React from "react";
 
 function Feedback() {
   return (
-    <section className="pt-[92px] pb-[170px]">
+    <section id="reviews" className="pt-[92px] pb-[170px]">
       <div className="container grid grid-cols-2 gap-[24px]">
         <div className="">
           <h2 className="text-5xl font-bold text-mainBlack">WHAT </h2>

@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 function Services() {
   return (
-    <section className="pt-[93px] pb-[121px] bg-[#F0F2FC]">
+    <section id="services" className="pt-[93px] pb-[121px] bg-[#F0F2FC]">
       <div className="container">
         <h2 className="text-center text-5xl font-bold text-mainBlack">
           WHAT{" "}
@@ -18,7 +19,7 @@ function Services() {
         <ul className="mt-[72px] grid grid-cols-3 gap-[24px] text-center">
           <li className="flex flex-col justify-between border rounded-[8px] px-[16px] py-[30px] bg-mainWhite">
             <Image
-              src="/services1.png"
+              src="/services2.png"
               alt="icon"
               width={72}
               height={72}
@@ -31,13 +32,13 @@ function Services() {
               action, personal growth, and improved performance, leading to
               higher team performance and better business results
             </p>
-            <button className="py-[12px] w-[168px] mx-auto px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
+            <Link href='executive-coaching' className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
               Learn More
-            </button>
+            </Link>
           </li>
           <li className="flex flex-col justify-between border rounded-[8px] px-[16px] py-[30px] bg-mainWhite">
             <Image
-              src="/services2.png"
+              src="/services1.png"
               alt="icon"
               width={72}
               height={72}
@@ -51,9 +52,9 @@ function Services() {
               mindset. I analyze your team&apos;s setup and identify areas for
               improvement
             </p>
-            <button className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
+            <Link href='executive-coaching' className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
               Learn More
-            </button>
+            </Link>
           </li>
           <li className="flex flex-col justify-between border rounded-[8px] px-[16px] py-[30px] bg-mainWhite">
             <Image

@@ -21,3 +21,9 @@ body {
 .bg-gradient-ul {
   background: linear-gradient(90deg, rgba(255, 255, 255, 1) 26%, rgba(245, 247, 255, 1) 26%);
 }
+
+ul.grid-cols-custom {
+  display: grid;
+  grid-template-columns: 302px 489.5px;
+  gap: 12px; /* Встановлює відступи між колонками */
+}
