@@ -4,19 +4,18 @@ import React from "react";
 
 function Services() {
   return (
-    <section id="services" className="pt-[93px] pb-[121px] bg-[#F0F2FC]">
+    <section id="services" className="py-[80px] lg:pt-[93px] lg:pb-[121px] bg-[#F0F2FC]">
       <div className="container">
-        <h2 className="text-center text-5xl font-bold text-mainBlack">
-          WHAT{" "}
+        <h2 className="text-center text-[32px] lg:text-5xl font-bold text-mainBlack">
+          WHICH{" "}
           <span className="py-[8px] px-[12px] text-mainWhite bg-mainBlue border rounded-[8px] -rotate-3 inline-block">
             SERVICES
           </span>{" "}
-          CATCH
         </h2>
-        <p className="mt-[33px] text-center text-5xl font-bold text-mainBlack">
-          YOUR ATTENTION?
+        <p className="lg:mt-[33px] text-center text-[32px] lg:text-5xl font-bold text-mainBlack">
+          STAND OUT TO YOU
         </p>
-        <ul className="mt-[72px] grid grid-cols-3 gap-[24px] text-center">
+        <ul className="mt-[72px] grid lg:grid-cols-3 gap-y-[18px] gap-[24px] text-center">
           <li className="flex flex-col justify-between border rounded-[8px] px-[16px] py-[30px] bg-mainWhite">
             <Image
               src="/services2.png"

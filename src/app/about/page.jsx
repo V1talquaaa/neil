@@ -1,27 +1,27 @@
 import Image from "next/image";
 import React from "react";
 import AboutPageIcon from "../svg/AboutPageIcon";
-import AboutPageElispseIcon from "../svg/AboutPageElispseIcon";
 
 function About() {
   return (
-    <section className="pt-[12px] pb-[148px] relative">
-        <div className="absolute right-0 top-0 z-0">
+    <section className="pt-[12px] mb-[100px] relative">
+        <div className="hidden lg:block absolute right-0 top-0 z-0">
         <AboutPageIcon />
         </div>
       <div className="container">
-        <div className="flex items-center text-sm">
+        <div className="hidden lg:flex items-center text-sm">
             <a href="/" className="text-[#B8B8B8]">Home screen <span className="text-base">&gt;</span></a>
             <span className="ml-[18px] text-[#5B5B5B]">About me</span>
         </div>
-        <div className="mt-[60px] flex items-cente relativer">
-        <Image src='/aboutAvatar.png' width={500} height={859} alt="neil meyrick"/>
-        <div className="ml-[24px] text-lg z-10">
-          <h2 className="mb-[28px] text-5xl text-mainBlue font-bold">LEARN & DEVELOP GROW</h2>
-          <h3 className="mb-[32px] font-light">
+        <div className="lg:mt-[60px] lg:flex lg:items-cente relative">
+        <Image src='/aboutAvatar.png' width={500} height={759} alt="neil meyrick" className="hidden lg:block"/>
+        <div className="lg:ml-[24px] text-base lg:text-lg z-10">
+          <h2 className="mb-[28px] text-[32px] lg:text-5xl lg:text-mainBlue font-bold leading-[1.2] lg:leading-[1.4]">LEARN & DEVELOP GROW</h2>
+          <h3 className="mb-[32px] text-lg lg:text-xl font-light">
             Global Executive Coach, <br />
             Team Catalyst & Leadership Developer Facilitator
           </h3>
+          <Image src='/aboutAvatarMob.png' width={400} height={386} alt="neil meyrick" className="rounded-[8px] mb-[20px] lg:hidden"/>
           <p>
             My first post-graduate job was as a teacher in Northern Spain. After
             a year there I spent ten years as a sales executive in three

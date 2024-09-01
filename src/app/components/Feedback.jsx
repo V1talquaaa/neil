@@ -3,14 +3,14 @@ import React from "react";
 
 function Feedback() {
   return (
-    <section id="reviews" className="pt-[92px] pb-[170px]">
-      <div className="container grid grid-cols-2 gap-[24px]">
+    <section id="reviews" className="py-[80px] lg:pt-[92px] lg:pb-[170px]">
+      <div className="container grid lg:grid-cols-2 gap-[24px]">
         <div className="">
-          <h2 className="text-5xl font-bold text-mainBlack">WHAT </h2>
-          <h2 className="py-[8px] px-[12px] w-[400px] text-5xl font-bold text-mainWhite bg-mainBlue border rounded-[8px]">
+          <h2 className="text-[32px] lg:text-5xl font-bold text-mainBlack">WHAT </h2>
+          <h2 className="py-[8px] px-[12px] w-[275px] lg:w-[400px] text-[32px] lg:text-5xl font-bold text-mainWhite bg-mainBlue border rounded-[8px]">
             CLIENTS THINK
           </h2>
-          <p className="max-w-[556px] pt-[24px] pb-[32px] text-sm text-mainBlack">
+          <p className="max-w-[556px] pt-[24px] pb-[32px] text-base lg:text-xl text-mainBlack">
             Discover the experiences and feedback from those who have worked
             with us. Read about their journeys and how our services have made an
             impact
@@ -33,7 +33,7 @@ function Feedback() {
                 holds the attention of participants. Highly recommended.”
               </p>
             </li>
-            <li className="order-2 py-[28px] px-[16px] max-w-[266px] bg-mainWhite rounded-[8px] shadow-md mb-[24px] ml-0 mr-auto absolute left-[60px] top-[210px]">
+            <li className="order-2 py-[28px] px-[16px] max-w-[266px] bg-mainWhite rounded-[8px] shadow-md mb-[24px] ml-0 mr-auto lg:absolute lg:left-[60px] lg:top-[210px]">
               <Image
                 src="/feedbackAvatar2.png"
                 alt="avatar"

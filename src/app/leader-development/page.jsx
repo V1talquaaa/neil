@@ -5,27 +5,35 @@ import ArrowRightBtnIcon from "../svg/ArrowRightBtnIcon";
 
 function LeaderDevelopment() {
   return (
-    <section className="pt-[12px] pb-[148px] relative">
+    <section className="lg:pt-[12px] pb-[120px] lg:pb-[148px] relative">
       <div className="container">
-        <div className="flex items-center text-sm">
+        <div className="hidden lg:flex items-center text-sm">
           <a href="/" className="text-[#B8B8B8]">
             Home screen <span className="text-base">&gt;</span>
           </a>
           <span className="ml-[18px] text-[#5B5B5B]">Leadership coaching</span>
         </div>
-        <div className="flex items-center mb-[24px] mt-[48px] text-5xl font-bold">
+        <div className="lg:flex items-center mb-[24px] mt-[48px] text-[32px] lg:text-5xl font-bold">
           <h2 className="py-[8px] px-[12px] mr-[8px] bg-mainBlue text-mainWhite rounded-[8px] inline-flex">
             LEADER
           </h2>
           <h2 className="text-mainBlack bg-transparent">DEVELOPMENT</h2>
         </div>
-        <div className="flex gap-[22px]">
+        <div className="lg:flex gap-[22px]">
           <div className="">
-            <p className="max-w-[549px] mb-[32px] text-base text-mainBlue text-right ml-auto">
+            <p className="max-w-[380px] lg:max-w-[549px] text-base text-mainBlue text-right ml-auto">
               “The true value of a leader is not measured by the work they do. A
               leader’s true value is measured by the work they inspire others to
-              do.” — Simon Sinek
+              do.”
             </p>
+            <p className="text-base text-mainBlue text-right ml-auto">— Simon Sinek</p>
+            <Image
+            src="/LeaderDevelopmentImgMob.png"
+            width={465}
+            height={505}
+            alt="neil meyrick"
+            className="lg:hidden my-[32px]"
+          />
             <p className="text-xl text-mainBlack">
               How can your leaders truly unleash the potential of the people in
               their teams in service of your business? True leadership
@@ -53,13 +61,14 @@ function LeaderDevelopment() {
             width={465}
             height={505}
             alt="neil meyrick"
+            className="hidden lg:block"
           />
         </div>
         <h3 className="mt-[68px] text-3xl font-bold">OTHER SERVICES</h3>
-        <ul className="mt-[24px] grid grid-cols-2 gap-[24px]">
+        <ul className="mt-[24px] grid lg:grid-cols-2 gap-[24px]">
           <li className="p-[24px] flex justify-between items-center bg-[#EAEDFF] rounded-[4px]">
             <div className="">
-              <h4 className="mb-[8px] text-2xl text-mainBlue font-semibold">
+              <h4 className="mb-[8px] text-xl lg:text-2xl text-mainBlue font-semibold">
                 Executive Coaching
               </h4>
               <p className="text-base text-mainBlack line-clamp-3">
@@ -72,14 +81,14 @@ function LeaderDevelopment() {
             </div>
             <Link
               href="/executive-coaching"
-              className="ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
+              className="ml-[45px] lg:ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
             >
               <ArrowRightBtnIcon />
             </Link>
           </li>
           <li className="p-[24px] flex justify-between items-center bg-[#CFD6FF] rounded-[4px]">
             <div className="">
-              <h4 className="mb-[8px] text-2xl text-mainBlue font-semibold">
+              <h4 className="mb-[8px] text-xl lg:text-2xl text-mainBlue font-semibold">
               Team Coaching
               </h4>
               <p className="text-base text-mainBlack line-clamp-3">
@@ -92,7 +101,7 @@ function LeaderDevelopment() {
             </div>
             <Link
               href="/team-coaching"
-              className="ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
+              className="ml-[45px] lg:ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
             >
               <ArrowRightBtnIcon />
             </Link>

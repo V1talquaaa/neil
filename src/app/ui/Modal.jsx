@@ -1,21 +1,35 @@
 import React from "react";
 import CloseBtnIcon from "../svg/CloseBtnIcon";
 
-function Modal({setOpenModal}) {
+function Modal({ setOpenModal }) {
+  const closeModal = () => {
+    setOpenModal(false);
+  };
 
-const closeModal = () => {
-  setOpenModal(false);
-
-}
+  const handleBackdropClick = (event) => {
+    // Якщо клік був на бекдропі, закриваємо модалку
+    if (event.target === event.currentTarget) {
+      closeModal();
+    }
+  };
 
   return (
-    <div className="h-lvh w-lvw bg-gray-800/45 fixed top-0 left-0 z-20 flex items-center justify-center">
-      <div className="w-[80vw] max-w-[780px] h-[90vh] max-h-[890px] pt-[48px] pb-[89px] px-[67px] rounded-[8px] bg-white relative">
-      <button type="button" onClick={() => closeModal()} className="absolute top-[24px] right-[24px]">
-      <CloseBtnIcon />
-      </button>
-        <div className="text-center px-[45px]">
-          <h2 className="mb-[12px] text-mainBlack text-4xl font-bold">GET IN TOUCH</h2>
+    <div
+      onClick={handleBackdropClick}
+      className="h-lvh w-lvw bg-gray-800/45 fixed top-0 left-0 z-20 flex items-center justify-center"
+    >
+      <div className="w-[90vw] sm:w-[80vw] max-w-[780px] h-[80vh] sm:h-[80vh] pt-[24px] pb-[24px] px-[48px] rounded-[8px] bg-white relative">
+        <button
+          type="button"
+          onClick={closeModal}
+          className="absolute top-[24px] right-[24px]"
+        >
+          <CloseBtnIcon />
+        </button>
+        <div className="text-center px-[20px] flex-grow-0">
+          <h2 className="mb-[12px] text-mainBlack text-4xl font-bold">
+            GET IN TOUCH
+          </h2>
           <p className="text-base text-mainBlack text-center">
             If you have any questions about my services, would like to discuss
             working together or a general enquiry please get in touch using the
@@ -24,7 +38,8 @@ const closeModal = () => {
           <ul className="mt-[24px] text-mainBlue">
             <li>
               <a href="mailto:neil.meyrick@gmail.com">
-                Email: <span className="underline">neil.meyrick@gmail.com</span>
+                Email:{" "}
+                <span className="underline">neil.meyrick@gmail.com</span>
               </a>
             </li>
             <li>
@@ -34,19 +49,46 @@ const closeModal = () => {
             </li>
           </ul>
         </div>
-        <form action="" className="mt-[32px] text-mainBlack">
-            <label htmlFor="" className="">Email <span className="text-red-600">*</span>
-            <input type="email" id="email" name="email" required className="w-[100%]  mt-[12px] mb-[36px] p-2 bg-[#DCDCDC] rounded-[4px]"/>
-            </label>
-            <label htmlFor="">Phone <span className="text-red-600">*</span>
-            <input type="tel" id="tel" name="tel" required className="w-[100%]  p-2 mt-[12px] mb-[36px] bg-[#DCDCDC] rounded-[4px]"/>
-            </label>
-            <label htmlFor="">Message <span className="text-red-600">*</span>
-            <textarea name="text" id="text" rows={7} cols={20} required className="w-[100%] p-2 mt-[12px] bg-[#DCDCDC] rounded-[4px] resize-none"></textarea>
-            </label>
-            <button type="submit" className="mt-[48px] px-[45px] py-[15px] border rounded-[8px] font-bold text-mainWhite bg-mainBlue hover:bg-blue-800 ease-in duration-200">
-                Submit
-              </button>
+        <form
+          action=""
+          className="mt-[16px] text-mainBlack flex-grow flex flex-col"
+        >
+          <label htmlFor="email" className="">
+            Email<span className="text-red-600">*</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              className="w-full mt-[8px] mb-[16px] p-2 bg-[#DCDCDC] rounded-[4px] flex-grow"
+            />
+          </label>
+          <label htmlFor="tel" className="">
+            Phone<span className="text-red-600">*</span>
+            <input
+              type="tel"
+              id="tel"
+              name="tel"
+              required
+              className="w-full p-2 mt-[8px] mb-[16px] bg-[#DCDCDC] rounded-[4px] flex-grow"
+            />
+          </label>
+          <label htmlFor="text" className="">
+            Message<span className="text-red-600">*</span>
+            <textarea
+              name="text"
+              id="text"
+              rows={4}
+              required
+              className="w-full p-2 mt-[8px] bg-[#DCDCDC] rounded-[4px] resize-none flex-grow"
+            ></textarea>
+          </label>
+          <button
+            type="submit"
+            className="mt-[25px] px-[40px] py-[12px] border rounded-[8px] font-bold text-mainWhite bg-mainBlue hover:bg-blue-800 ease-in duration-200 self-start"
+          >
+            Submit
+          </button>
         </form>
       </div>
     </div>

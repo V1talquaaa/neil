@@ -14,7 +14,7 @@ function Header() {
 
 
   return (
-    <section className="py-[24px] bg-mainBlue text-mainWhite z-30">
+    <section className="hidden lg:block py-[24px] bg-mainBlue text-mainWhite z-30">
       <div className="absolute top-[13px] z-20">
       </div>
       <div className="container">

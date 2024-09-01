@@ -5,23 +5,23 @@ import ArrowRightBtnIcon from "../svg/ArrowRightBtnIcon";
 
 function ExecutiveCoaching() {
   return (
-    <section className="pt-[12px] pb-[148px] relative">
+    <section className="pt-[12px] pb-[120px] lg:pb-[148px] relative">
       <div className="container">
-        <div className="flex items-center text-sm">
+        <div className="hidden lg:flex items-center text-sm">
           <a href="/" className="text-[#B8B8B8]">
             Home screen <span className="text-base">&gt;</span>
           </a>
-          <span className="ml-[18px] text-[#5B5B5B]">Executive coaching</span>
+          <span className="ml-[18px] text-[#5B5B5B]">Team coaching</span>
         </div>
-        <div className="flex items-center mb-[24px] mt-[48px] text-5xl font-bold">
-          <h2 className="py-[8px] px-[12px] mr-[8px] bg-mainBlue text-5xl text-mainWhite rounded-[8px] inline-flex">
+        <div className="lg:flex items-center mb-[16px] lg:mb-[24px] mt-[32px] lg:mt-[48px] text-[32px] lg:text-5xl font-bold">
+          <h2 className="py-[8px] px-[12px] mr-[8px] bg-mainBlue lg:text-5xl text-mainWhite rounded-[8px] inline-flex">
             TEAM
           </h2>
           <h2 className="text-mainBlack bg-transparent">COACHING</h2>
         </div>
-        <div className="grid grid-cols-3 gap-[24px]">
+        <div className="lg:grid lg:grid-cols-3 gap-[24px]">
           <div className="col-span-2">
-            <p className="text-xl">
+            <p className="text-base lg:text-xl">
               Effective teamwork requires the right processes, structures,
               behaviors, and communication for successful goal setting and
               delivery. The team coaching process below{" "}
@@ -29,10 +29,17 @@ function ExecutiveCoaching() {
                 will help transform your team into a truly high-performing unit
               </span>
             </p>
-            <ul className="mt-[48px] grid grid-cols-custom gap-[12px] text-base">
-              <li className="bg-[#CFD6FF] col-span-1 row-span-2 flex flex-col justify-start p-[12px] relative pt-[100px] pb-[65px] rounded-[4px]">
-              <div className="absolute top-[84px] left-2 w-[52px] h-[52px] bg-[#EAEDFF] rounded-full z-0"></div>
-                <h3 className="mb-[24px] ml-[16px] text-xl text-mainBlue font-semibold z-10">STEP 1</h3>
+            <Image
+              src="/teamCoachingImgMob.png"
+              width={465}
+              height={762}
+              alt="neil meyrick"
+              className="my-[32px] lg:hidden"
+            />
+            <ul className="lg:mt-[48px] lg:grid lg:grid-cols-custom gap-[12px] text-base">
+              <li className="bg-[#CFD6FF] mb-[24px] lg:mb-0 lg:col-span-1 lg:row-span-2 flex flex-col justify-start p-[12px] relative pt-[24px] lg:pt-[100px] pb-[65px] rounded-[4px]">
+              <div className="absolute lg:top-[84px] left-2 w-[52px] h-[52px] bg-[#EAEDFF] rounded-full z-0"></div>
+                <h3 className="mb-[24px] mt-[15px] lg:mt-0 ml-[16px] text-xl text-mainBlue font-semibold z-10">STEP 1</h3>
                 <p>
                   Meet, scope and agree the initial contract. I’ll usually use a
                   survey, interviews and stakeholder input to to assess the
@@ -43,7 +50,7 @@ function ExecutiveCoaching() {
                 </p>
               </li>
 
-              <li className="bg-[#EAEDFF] col-span-2 row-span-1 flex flex-col justify-start p-[12px] relative rounded-[4px]">
+              <li className="bg-[#EAEDFF] mb-[24px] lg:mb-0 col-span-2 row-span-1 flex flex-col justify-start p-[12px] relative rounded-[4px]">
               <div className="absolute top-[12px] w-[52px] h-[52px] bg-[#CFD6FF] rounded-full z-0"></div>
                 <h3 className="mb-[24px] ml-[16px] mt-[16px] text-xl text-mainBlue font-semibold z-10">STEP 2</h3>
                 <p>
@@ -56,7 +63,7 @@ function ExecutiveCoaching() {
                 </p>
               </li>
 
-              <li className="bg-[#CFD6FF] col-span-2 row-span-1 flex flex-col justify-start p-[12px] relative rounded-[4px]">
+              <li className="bg-[#CFD6FF] mb-[24px] lg:mb-0 col-span-2 row-span-1 flex flex-col justify-start p-[12px] relative rounded-[4px]">
               <div className="absolute top-[12px] w-[52px] h-[52px] bg-[#EAEDFF] rounded-full z-0"></div>
                 <h3 className="mb-[24px] mt-[16px] ml-[16px] text-xl text-mainBlue font-semibold z-10">STEP 3</h3>
                 <p>
@@ -82,7 +89,7 @@ function ExecutiveCoaching() {
               </li>
             </ul>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-1 hidden lg:block">
             <Image
               src="/teamCoachingImg.png"
               width={465}
@@ -93,11 +100,11 @@ function ExecutiveCoaching() {
           </div>
         </div>
         <h3 className="mt-[68px] text-3xl font-bold">OTHER SERVICES</h3>
-        <ul className="mt-[24px] grid grid-cols-2 gap-[24px]">
+        <ul className="mt-[24px] grid lg:grid-cols-2 gap-[24px]">
           <li className="p-[24px] flex justify-between items-center bg-[#EAEDFF] rounded-[4px]">
             
             <div>
-              <h4 className="mb-[8px] text-2xl text-mainBlue font-semibold">
+              <h4 className="mb-[8px] text-xl lg:text-2xl text-mainBlue font-semibold">
                 Executive Coaching
               </h4>
               <p className="text-base text-mainBlack line-clamp-3">
@@ -110,14 +117,14 @@ function ExecutiveCoaching() {
             </div>
             <Link
               href="/executive-coaching"
-              className="ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
+              className="ml-[45px] lg:ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
             >
               <ArrowRightBtnIcon />
             </Link>
           </li>
           <li className="p-[24px] flex justify-between items-center bg-[#CFD6FF] rounded-[4px]">
             <div>
-              <h4 className="mb-[8px] text-2xl text-mainBlue font-semibold">
+              <h4 className="mb-[8px] text-xl lg:text-2xl text-mainBlue font-semibold">
                 Leader Development
               </h4>
               <p className="text-base text-mainBlack line-clamp-3">
@@ -130,7 +137,7 @@ function ExecutiveCoaching() {
             </div>
             <Link
               href="/leader-development"
-              className="ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
+              className="ml-[45px] lg:ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
             >
               <ArrowRightBtnIcon />
             </Link>

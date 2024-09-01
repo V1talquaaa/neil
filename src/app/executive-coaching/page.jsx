@@ -5,29 +5,36 @@ import ArrowRightBtnIcon from "../svg/ArrowRightBtnIcon";
 
 function executiveCoaching() {
   return (
-    <section className="pt-[12px] pb-[148px] relative">
+    <section className="pt-[12px] pb-[120px] lg:pb-[148px] relative">
       <div className="container">
-        <div className="flex items-center text-sm">
+        <div className="hidden lg:flex items-center text-sm">
           <a href="/" className="text-[#B8B8B8]">
             Home screen <span className="text-base">&gt;</span>
           </a>
           <span className="ml-[18px] text-[#5B5B5B]">Executive coaching</span>
         </div>
-        <div className="flex items-center mb-[24px] mt-[48px] text-5xl font-bold">
+        <div className="lg:flex items-center mb-[24px] mt-[32px] lg:mt-[48px] text-[32px] lg:text-5xl font-bold">
           <h2 className="py-[8px] px-[12px] mr-[8px] bg-mainBlue text-mainWhite rounded-[8px] inline-flex">
             EXECUTIVE
           </h2>
           <h2 className="text-mainBlack bg-transparent">COACHING</h2>
         </div>
-        <div className="grid grid-cols-2 gap-[24px]">
-          <div className="text-lg">
+        <div className="grid lg:grid-cols-2 gap-[24px]">
+          <div className="text-sm lg:text-lg">
             <p className="">
-              Coaching is used by business leaders to bring many and various
-              benefits. It has been shown in randomised trials (in this FT
+              <span className="font-bold">Coaching is used by business leaders to bring many and various
+              benefits.</span> It has been shown in randomised trials (in this FT
               article) to be effective – not just in the opinion of the
               coachees, but also that of their managers.
             </p>
-            <h3 className="mt-[70px] mb-[40px] ml-[24px] z-10 relative text-mainBlue font-semibold text-xl">
+            <Image
+            src="/executiveCoachingMob.png"
+            width={343}
+            height={408}
+            alt="neil meyrick"
+            className="mt-[24px] mx-auto lg:hidden"
+          />
+            <h3 className="mt-[50px] lg:mt-[70px] mb-[40px] ml-[24px] z-10 relative text-mainBlue font-semibold text-xl">
               <span className="relative">
                 <span className="absolute left-[-35px] top-[-25px] w-[70px] h-[70px] bg-[#E3F2FF] rounded-full z-[-1]"></span>
                 Some of the benefits that coaching can bring include:
@@ -72,13 +79,14 @@ function executiveCoaching() {
             width={628}
             height={832}
             alt="neil meyrick"
+            className="hidden lg:block"
           />
         </div>
         <h3 className="mt-[68px] text-3xl font-bold">OTHER SERVICES</h3>
-        <ul className="mt-[24px] grid grid-cols-2 gap-[24px]">
+        <ul className="mt-[24px] grid lg:grid-cols-2 gap-[24px]">
           <li className="p-[24px] flex justify-between items-center bg-[#EAEDFF] rounded-[4px]">
             <div className="">
-              <h4 className="mb-[8px] text-2xl text-mainBlue font-semibold">
+              <h4 className="mb-[8px] text-xl lg:text-2xl text-mainBlue font-semibold">
                 Team Coaching
               </h4>
               <p className="text-base text-mainBlack line-clamp-3">
@@ -91,14 +99,14 @@ function executiveCoaching() {
             </div>
             <Link
               href="/team-coaching"
-              className="ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
+              className="ml-[45px] lg:ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
             >
               <ArrowRightBtnIcon />
             </Link>
           </li>
           <li className="p-[24px] flex justify-between items-center bg-[#CFD6FF] rounded-[4px]">
             <div className="">
-              <h4 className="mb-[8px] text-2xl text-mainBlue font-semibold">
+              <h4 className="mb-[8px] text-xl lg:text-2xl text-mainBlue font-semibold">
                 Leader Development
               </h4>
               <p className="text-base text-mainBlack line-clamp-3">
@@ -111,7 +119,7 @@ function executiveCoaching() {
             </div>
             <Link
               href="/leader-development"
-              className="ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
+              className="ml-[45px] lg:ml-[149px] p-[16px] bg-mainBlue text-mainWhite rounded-[8px]"
             >
               <ArrowRightBtnIcon />
             </Link>
