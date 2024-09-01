@@ -15,7 +15,7 @@ function Hero() {
   };
 
   return (
-    <section className="py-[140px] lg:pt-[51px] lg:pb-[134px] bg-mainBlue bg-heroMob bg-right bg-no-repeat lg:bg-none text-mainWhite relative">
+    <section className="py-[100px] lg:pt-[51px] lg:pb-[134px] bg-mainBlue bg-heroMob bg-right bg-no-repeat lg:bg-none text-mainWhite relative">
       <div className="absolute top-10 lg:-top-20">
         <ElipseHeroIcon />
       </div>
