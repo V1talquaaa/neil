@@ -16,7 +16,7 @@ function Modal({ setOpenModal }) {
   return (
     <div
       onClick={handleBackdropClick}
-      className="h-lvh w-lvw bg-gray-800/45 fixed top-0 left-0 z-20 flex items-center justify-center px-[15px] py-[15px] lg:px-[450px] "
+      className="h-lvh w-lvw bg-gray-800/45 fixed top-0 left-0 z-20 flex items-center justify-center px-[15px] py-[45px] lg:px-[450px] "
     >
       <div className="pt-[24px] pb-[24px] px-[48px] rounded-[8px] bg-white relative">
         <button
