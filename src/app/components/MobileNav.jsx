@@ -11,23 +11,14 @@ export const MobileNav = ({ closeMenuBtn }) => {
         </button>
       </div>
         <ul className="mt-[48px] lg:mt-0 flex flex-col gap-[32px] lg:flex-row items-center lg:gap-[16px] text-lg text-mainWhite">
-          {/* <li>
-            <a href="#home" onClick={closeMenuBtn}>Home</a>
-          </li> */}
           <li>
-            <a href="#institutions " onClick={closeMenuBtn}>Institutions</a>
+            <a href="#about " onClick={closeMenuBtn}>About me</a>
           </li>
           <li> 
-            <a href="#strategies" onClick={closeMenuBtn}>Strategies</a>
+            <a href="#services" onClick={closeMenuBtn}>Services</a>
           </li>
           <li>
-            <a href="#history" onClick={closeMenuBtn}>History</a>
-          </li>
-          <li>
-            <a href="#events" onClick={closeMenuBtn}>Events</a>
-          </li>
-          <li>
-            <a href="#footer" onClick={closeMenuBtn}>Contacts</a>
+            <a href="#history" onClick={closeMenuBtn}>Reviews</a>
           </li>
         </ul>
         <div className="mt-[48px] lg:mt-0 text-base text-mainWhite">

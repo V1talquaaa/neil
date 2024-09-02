@@ -16,9 +16,9 @@ function Modal({ setOpenModal }) {
   return (
     <div
       onClick={handleBackdropClick}
-      className="h-lvh w-lvw bg-gray-800/45 fixed top-0 left-0 z-20 flex items-center justify-center"
+      className="h-lvh w-lvw bg-gray-800/45 fixed top-0 left-0 z-20 flex items-center justify-center px-[50px] lg:px-[450px] "
     >
-      <div className="w-[90vw] sm:w-[80vw] max-w-[780px] h-[80vh] sm:h-[80vh] pt-[24px] pb-[24px] px-[48px] rounded-[8px] bg-white relative">
+      <div className="pt-[24px] pb-[24px] px-[48px] rounded-[8px] bg-white relative">
         <button
           type="button"
           onClick={closeModal}
@@ -38,8 +38,7 @@ function Modal({ setOpenModal }) {
           <ul className="mt-[24px] text-mainBlue">
             <li>
               <a href="mailto:neil.meyrick@gmail.com">
-                Email:{" "}
-                <span className="underline">neil.meyrick@gmail.com</span>
+                Email: <span className="underline">neil.meyrick@gmail.com</span>
               </a>
             </li>
             <li>
@@ -53,6 +52,16 @@ function Modal({ setOpenModal }) {
           action=""
           className="mt-[16px] text-mainBlack flex-grow flex flex-col"
         >
+          <label htmlFor="tel" className="">
+            Name<span className="text-red-600">*</span>
+            <input
+              type="name"
+              id="name"
+              name="name"
+              required
+              className="w-full p-2 mt-[8px] mb-[16px] bg-[#DCDCDC] rounded-[4px] flex-grow"
+            />
+          </label>
           <label htmlFor="email" className="">
             Email<span className="text-red-600">*</span>
             <input
@@ -61,16 +70,6 @@ function Modal({ setOpenModal }) {
               name="email"
               required
               className="w-full mt-[8px] mb-[16px] p-2 bg-[#DCDCDC] rounded-[4px] flex-grow"
-            />
-          </label>
-          <label htmlFor="tel" className="">
-            Phone<span className="text-red-600">*</span>
-            <input
-              type="tel"
-              id="tel"
-              name="tel"
-              required
-              className="w-full p-2 mt-[8px] mb-[16px] bg-[#DCDCDC] rounded-[4px] flex-grow"
             />
           </label>
           <label htmlFor="text" className="">
