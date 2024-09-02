@@ -31,7 +31,7 @@ function Services() {
               action, personal growth, and improved performance, leading to
               higher team performance and better business results
             </p>
-            <Link href='executive-coaching' className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
+            <Link href='/executive-coaching' className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
               Learn More
             </Link>
           </li>
@@ -51,7 +51,7 @@ function Services() {
               mindset. I analyze your team&apos;s setup and identify areas for
               improvement
             </p>
-            <Link href='executive-coaching' className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
+            <Link href='/team-coaching' className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
               Learn More
             </Link>
           </li>
@@ -71,9 +71,9 @@ function Services() {
               training. I help leaders develop these skills through assessment,
               reflection, challenge and support.
             </p>
-            <button className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
+            <Link href='/leader-development' className="w-[168px] mx-auto py-[12px] px-[24px] text-base font-bold border bg-mainBlue text-mainWhite rounded-[8px] hover:bg-mainWhite hover:text-mainBlue ease-in duration-200 hover:border-mainBlue">
               Learn More
-            </button>
+            </Link>
           </li>
         </ul>
       </div>
