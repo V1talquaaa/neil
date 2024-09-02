@@ -34,14 +34,14 @@ function LeaderDevelopment() {
             alt="neil meyrick"
             className="lg:hidden my-[32px]"
           />
-            <p className="text-xl text-mainBlack">
+            <p className="text-base lg:text-xl text-mainBlack">
               How can your leaders truly unleash the potential of the people in
               their teams in service of your business? True leadership
               facilitates the execution of a company’s strategy by building
               alignment, generating engagement and growing the capabilities of
               others.
             </p>
-            <p className="my-[16px] text-xl text-mainBlack">
+            <p className="my-[16px] text-base lg:text-xl text-mainBlack">
               I facilitate leadership development programs on content including
               ‘leading a thriving team in a virtual world’, coaching skills,
               decision-making, delegation, effective feedback, personal & team
@@ -52,7 +52,7 @@ function LeaderDevelopment() {
               supports including mentoring, action learning, 360 degree and peer
               feedback.
             </p>
-            <p className="text-xl text-mainBlack">
+            <p className="text-base lg:text-xl text-mainBlack">
             What could your leaders do differently to benefit their teams and the wider organisation?
             </p>
           </div>
