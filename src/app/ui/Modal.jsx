@@ -18,7 +18,7 @@ function Modal({ setOpenModal }) {
       onClick={handleBackdropClick}
       className="h-lvh w-lvw bg-gray-800/45 fixed top-0 left-0 z-20 flex items-center justify-center px-[15px] py-[45px] lg:px-[450px] "
     >
-      <div className="pt-[24px] pb-[24px] px-[48px] rounded-[8px] bg-white relative">
+      <div className="mt-[80px] mb-[40px] pt-[24px] pb-[24px] px-[15px] lg:px-[48px] rounded-[8px] bg-white relative">
         <button
           type="button"
           onClick={closeModal}
@@ -27,10 +27,10 @@ function Modal({ setOpenModal }) {
           <CloseBtnIcon />
         </button>
         <div className="text-center px-[20px] flex-grow-0">
-          <h2 className="mb-[12px] text-mainBlack text-4xl font-bold">
+          <h2 className="mb-[12px] text-mainBlack text-xl lg:text-4xl font-bold">
             GET IN TOUCH
           </h2>
-          <p className="text-base text-mainBlack text-center">
+          <p className="text-sm lg:text-base text-mainBlack text-center">
             If you have any questions about my services, would like to discuss
             working together or a general enquiry please get in touch using the
             details below or by filling in the form
@@ -59,7 +59,7 @@ function Modal({ setOpenModal }) {
               id="name"
               name="name"
               required
-              className="w-full p-2 mt-[8px] mb-[16px] bg-[#DCDCDC] rounded-[4px] flex-grow"
+              className="w-full p-2 mt-[8px] mb-[8px] lg:mb-[16px] bg-[#DCDCDC] rounded-[4px] flex-grow"
             />
           </label>
           <label htmlFor="email" className="">
@@ -69,7 +69,7 @@ function Modal({ setOpenModal }) {
               id="email"
               name="email"
               required
-              className="w-full mt-[8px] mb-[16px] p-2 bg-[#DCDCDC] rounded-[4px] flex-grow"
+              className="w-full mt-[8px] mb-[8px] lg:mb-[16px] p-2 bg-[#DCDCDC] rounded-[4px] flex-grow"
             />
           </label>
           <label htmlFor="text" className="">
