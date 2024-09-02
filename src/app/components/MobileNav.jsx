@@ -20,17 +20,17 @@ export const MobileNav = ({ closeMenuBtn }) => {
         </div>
         <ul className="mt-[48px] lg:mt-0 flex flex-col gap-[32px] lg:flex-row items-center lg:gap-[16px] text-lg text-mainWhite">
           <li>
-            <a href="#about " onClick={closeMenuBtn}>
+            <a href="/#about " onClick={closeMenuBtn}>
               About me
             </a>
           </li>
           <li>
-            <a href="#services" onClick={closeMenuBtn}>
+            <a href="/#services" onClick={closeMenuBtn}>
               Services
             </a>
           </li>
           <li>
-            <a href="#history" onClick={closeMenuBtn}>
+            <a href="/#reviews" onClick={closeMenuBtn}>
               Reviews
             </a>
           </li>
